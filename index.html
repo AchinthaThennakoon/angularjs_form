@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="eng" ng-app="myForm">
+<!--head-->
+
+<head>
+    <title>sign up</title>
+    <meta name="discription" content="Sign up page for registering user for my.com">
+    <meta name="author" content="achintha thennakoon">
+    <link rel="stylesheet" href="content\style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="content\lib\app.js"></script>
+</head>
+
+<!--body-->
+
+<body ng-controller="myController">
+    <div id=myform>
+        <form ng-submit="sumbit()" method="POST">
+            <h1 class="head">SignUp</h1>
+            <label for="username">Name</label>
+            <br>
+            <input type="text" name="username" id="username" placeholder="Enter your name" ng-model="username">
+            <br>
+            <label for="index">Index no.</label>
+            <br>
+            <input type="text" name="index" id="index" placeholder="19xxxxM" ng-model="index">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" ng-model="email">
+            <br>
+            <button type="submit" value="submit">sign up</button>
+        </form>
+    </div>
+</body>
+
+</html>
